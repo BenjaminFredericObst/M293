@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 75px;
+  background-color: black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul a {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar ul li a {
+  color: #999;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.navbar ul li a:hover {
+  color: #76b900;
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #76b900;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #59a300;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.product-card {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h2 {
+  margin: 15px 0;
+}
+
+.product-card p {
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #76b900;
+  color: black;
+  font-size: 0.9em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #59a300;
+}
+
+footer {
+  background-color: black;
+  color: #999999;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h3 {
+  color: white;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #76b900;
+  font-weight: 500;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
