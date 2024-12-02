@@ -10,21 +10,18 @@ body {
   font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
+  padding: 0 75px;
+  background-color: black;
 }
 
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #1e1e1e;
+  background-color: black;
   padding: 10px 20px;
   font-size: 20px;
   line-height: 45px;
-}
-
-.navbar .logo img {
-  height: 100px;
 }
 
 .navbar ul {
@@ -36,19 +33,27 @@ body {
   margin: 0 15px;
 }
 
+.navbar ul a {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .navbar ul li a {
   color: #999;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 23px;
 }
 
 .navbar ul li a:hover {
-  color: white;
+  color: #76b900;
 }
 
 /* Hero Section */
 .hero {
-  background: url('hero-bg.jpg') no-repeat center center/cover;
   color: white;
   background-color: black;
   text-align: center;
@@ -121,7 +126,6 @@ body {
 .product-card button:hover {
   background-color: #59a300;
 }
-
 
 footer {
   background-color: black;
