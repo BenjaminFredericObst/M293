@@ -8,5 +8,5 @@ Dieses Projekt verbindet meine Begeisterung für Fortnite mit dem Ziel, eine kre
 
 # Wireframe
 
-![Wireframe Home](./images/wireframe-home.png)
-![Wireframe Unterseite](./images/wireframe-unterseite.png)
+![Wireframe Home](https://github.com/BenjaminFredericObst/M293/blob/main/Projekt_Fabio/images/Wireframe-Home.png)
+![Wireframe Unterseite](https://github.com/BenjaminFredericObst/M293/blob/main/Projekt_Fabio/images/Wireframe-Unterseite.png)
