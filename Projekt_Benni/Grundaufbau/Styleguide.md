@@ -5,5 +5,5 @@
 - Banner, Boxen etc.: 3c3c3c., rgb(60, 60, 60), hsl(0, 0%, 24%)
 - Hovereffect Button: 69e555, rgb(105, 229, 85), hsl(112, 73%, 62%)
 ## Schriftart/Font
-VW Head Bold, sans-serif
+alles nicht Titel: VW Head Bold, sans-serif
 Titel: akzidenz-grotesk-condensed, sans-serif
