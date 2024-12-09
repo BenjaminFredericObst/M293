@@ -8,5 +8,5 @@ Dieses Projekt verbindet meine Begeisterung für Fortnite mit dem Ziel, eine kre
 
 # Wireframe
 
-![Wireframe](./images/wireframe-unterseite.png)
-![](./images/wireframe-home.png)
+![Wireframe Home](./images/wireframe-home.png)
+![Wireframe Unterseite](./images/wireframe-unterseite.png)
