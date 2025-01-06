@@ -1,0 +1,79 @@
+/* Grundlayout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  border: 2px solid pink;
+  padding: 10px;
+}
+
+/* Header */
+header {
+  border: 2px solid pink;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header button {
+  background-color: #0099e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #007bb5;
+}
+
+/* Main Section */
+main {
+  border: 2px solid pink;
+  padding: 10px;
+}
+
+section {
+  border: 2px solid pink;
+  padding: 10px;
+}
+
+/* Titelbild */
+.titelbild {
+  background-color: #0099e6;
+  color: white;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 2px solid pink;
+}
+
+/* Sub-Articles */
+.sub-articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-articles article {
+  background-color: #0099e6;
+  color: white;
+  text-align: center;
+  width: 30%;
+  padding: 20px 0;
+  border: 2px solid pink;
+}
+
+.sub-articles article h2 {
+  font-size: 1.2rem;
+}
