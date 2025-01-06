@@ -1,0 +1,200 @@
+body {
+  background-color: rgb(27, 28, 30);
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(60, 60, 60); /* Dark gray background for the box */
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between links */
+}
+.header nav a {
+  color: white; /* Default link color */
+  text-decoration: none; /* No underline by default */
+  font-size: 16px;
+  font-weight: bold;
+}
+.header nav a:hover {
+  color: white; /* Keep text white */
+  text-decoration: underline;
+  text-decoration-color: rgb(65, 166, 57); /* Green underline on hover */
+}
+
+/* Overall container */
+.main-content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Both sides take equal space */
+  gap: 20px; /* Add spacing between grid items */
+  width: 100%; /* Use the full width of the viewport */
+  height: 100vh; /* Use the full height of the viewport */
+  padding: 20px; /* Optional: Padding for spacing around the container */
+  box-sizing: border-box; /* Ensure padding is included in total width and height */
+}
+
+/* Left Side */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute the content evenly */
+  height: 100%; /* Ensures the left side takes the full height */
+}
+
+/* Right Side */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+  height: 100%; /* Ensures the right side takes the full height */
+}
+
+.index .next-match {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Allow sections to grow and fill space */
+}
+
+
+
+.index .photos {
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Allow sections to grow and fill space */
+}
+
+
+
+.index .last-game {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.index .result {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.index .stats {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.index .table {
+  
+  margin: 10px;
+  margin-top: 0px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.matchcenter .next-match {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Allow sections to grow and fill space */
+}
+
+.matchcenter .next-next-match {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Allow sections to grow and fill space */
+}
+
+.matchcenter .table {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.photos-site .main-content {
+  display: flex; /* Use Flexbox instead of Grid for this specific page */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: calc(100vh - 70px); /* Full viewport height minus header height */
+  margin: 55px;
+  box-sizing: border-box; /* Include padding in the total size */
+  gap: 20px; /* Add spacing between the buttons and photos */
+}
+
+.photos-site button {
+  background-color: rgb(65, 166, 57); /* Green background for the buttons */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.photos-site button:hover {
+  background-color: rgb(105, 229, 85); /* Darker green on hover */
+}
+
+.photos-site .photos img {
+  margin-top: 15px;
+  padding: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Maintain aspect ratio without distortion */
+  border-radius: 8px; /* Match container's border radius */
+}
+
+/* Styling for the counter */
+.photos-site .imageCounter {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
