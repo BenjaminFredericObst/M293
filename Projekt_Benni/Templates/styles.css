@@ -10,13 +10,17 @@ body {
   left: 0;
   width: 100%;
   background-color: rgb(60, 60, 60); /* Dark gray background for the box */
-  padding: 20px 0;
+  padding: 18px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .header nav {
   display: flex;
   justify-content: center;
   gap: 20px; /* Spacing between links */
+}
+
+.header nav .main-logo img{
+  margin-top: -9px;
 }
 .header nav a {
   color: white; /* Default link color */
@@ -68,19 +72,30 @@ body {
   flex-grow: 1; /* Allow sections to grow and fill space */
 }
 
-
-
 .index .photos {
-  margin: 10px;
-  padding: 15px;
-  background-color: white;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the parent container has relative positioning */
+  display: inline-block; /* To ensure the element sizes correctly around the image */
   flex-grow: 1; /* Allow sections to grow and fill space */
 }
 
+.index .photos img {
+  max-width: 100%; /* Image will not exceed the container's width */
+  max-height: 400px; /* Image will not exceed 400px in height */
+  object-fit: contain; /* The image will scale within the box, keeping its aspect ratio */
+  border-radius: 8px;
+}
 
+.index .photos h2 {
+  position: absolute;
+  top: 50%; /* Vertically center the text */
+  left: 50%; /* Horizontally center the text */
+  transform: translate(-50%, -50%); /* Adjust to perfectly center */
+  color: white; /* Make text white for better contrast */
+  font-size: 24px; /* Adjust size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add some shadow for better readability */
+  margin: 0; /* Ensure no default margin on the h2 */
+}
 
 .index .last-game {
   display: flex;
@@ -90,18 +105,18 @@ body {
 }
 
 .index .result {
-  margin: 10px;
-  padding: 15px;
+  margin: 10px; /* Keep the margin as is */
+  padding: 20px; /* Increase the padding to make these blocks larger */
   background-color: rgb(60, 60, 60);
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
+  flex-grow: 1; /* Allow these blocks to grow */
 }
 
 .index .stats {
   margin: 10px;
-  padding: 15px;
+  padding: 20px;
   background-color: rgb(60, 60, 60);
   text-align: center;
   border-radius: 8px;
@@ -109,8 +124,58 @@ body {
   flex-grow: 1;
 }
 
+.index .stats h2 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.stats-table-wrapper {
+  max-height: 120px; /* Reduced height to show only about 4 rows */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Space for scroll bar */
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 10px; /* Reduced padding to fit more content */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.stats-table th {
+  background-color: rgb(80, 80, 80);
+  font-size: 16px;
+}
+
+.stats-table td {
+  background-color: rgb(70, 70, 70);
+  font-size: 14px;
+}
+
+.stats-table tr:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+.stats-table td {
+  color: #f1f1f1; /* Lighter text for better contrast */
+}
+
+.stats-table th {
+  color: #fff; /* White for header text */
+}
+
+.index .table-container{
+  max-height: 280px;
+}
+
 .index .table {
-  
   margin: 10px;
   margin-top: 0px;
   padding: 15px;
@@ -118,7 +183,8 @@ body {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
+  flex-grow: 0;
+  
 }
 
 .matchcenter .next-match {
@@ -150,6 +216,56 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
 }
+.matchcenter .table-container{
+  max-height: 520px;
+}
+
+.table {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(60, 60, 60);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  
+}
+
+.table h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.table-container {
+  overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 8px;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: rgb(40, 40, 40);
+}
+
+.table tr:nth-child(even) {
+  background-color: rgb(50, 50, 50);
+}
+
+.table img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
 
 .photos-site .main-content {
   display: flex; /* Use Flexbox instead of Grid for this specific page */
@@ -197,4 +313,76 @@ body {
   font-size: 18px;
   font-weight: bold;
   border-radius: 5px;
+}
+
+
+
+/* Basic styling for the history section */
+.history {
+  margin: 10px auto; /* Auto margin to center the box, and keep the space at the top */
+  padding: 10px; /* Reduced padding */
+  background-color: rgb(60, 60, 60);
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  font-size: 14px; /* Reduced font size */
+  max-width: 800px; /* Set max width to make the history box narrower */
+  width: 100%; /* Ensure it takes up the full width available */
+}
+
+/* Basic form styling */
+.history-form {
+  margin-top: 20px; /* Increased margin top */
+  padding: 10px; /* Reduced padding */
+  background-color: rgb(60, 60, 60);
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Set max width to align with history section */
+  width: 100%; /* Ensure full width */
+  margin-left: auto; /* Center the form horizontally */
+  margin-right: auto; /* Center the form horizontally */
+}
+
+/* Form fields styling */
+.history-form label {
+  display: block;
+  margin-top: 8px; /* Reduced margin */
+  color: white;
+  font-size: 14px; /* Reduced font size */
+}
+
+.history-form input, .history-form textarea {
+  width:90%; /* Make input and textarea fill the available width */
+  padding: 8px; /* Reduced padding */
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px; /* Reduced font size */
+}
+
+/* Submit button styling */
+.history-form button {
+  margin-top: 15px; /* Reduced margin top */
+  padding: 8px 16px; /* Reduced padding */
+  background-color: rgb(65, 166, 57);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size */
+}
+
+.history-form button:hover {
+  background-color: rgb(105, 229, 85);
+}
+
+/* To ensure the main content layout is correct */
+.history-page .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align everything */
+  width: 100%; /* Ensures full width */
+  padding-bottom: 20px; /* Some space at the bottom */
 }
