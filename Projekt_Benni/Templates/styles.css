@@ -267,54 +267,54 @@ body {
 }
 
 
+/* Ensure photos are responsive */
 .photos-site .main-content {
-  display: flex; /* Use Flexbox instead of Grid for this specific page */
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  height: calc(100vh - 70px); /* Full viewport height minus header height */
+  display: flex; /* Flexbox ensures responsive layout */
+  justify-content: center; /* Center the content */
+  align-items: center; /* Vertically center the content */
+  height: calc(100vh - 70px); /* Full viewport height minus the header */
   margin: 55px;
-  box-sizing: border-box; /* Include padding in the total size */
-  gap: 20px; /* Add spacing between the buttons and photos */
+  gap: 20px; /* Gap between buttons and images */
+  box-sizing: border-box;
 }
 
+/* Button styles for better responsiveness */
 .photos-site button {
-  background-color: rgb(65, 166, 57); /* Green background for the buttons */
+  background-color: rgb(65, 166, 57); /* Green background */
   color: white; /* White text */
   border: none; /* Remove default border */
-  padding: 10px 20px; /* Add padding */
+  padding: 10px 20px; /* Button padding */
   font-size: 16px; /* Adjust font size */
   font-weight: bold; /* Bold text */
   border-radius: 8px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+  cursor: pointer; /* Pointer on hover */
   transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
 .photos-site button:hover {
-  background-color: rgb(105, 229, 85); /* Darker green on hover */
+  background-color: rgb(105, 229, 85); /* Lighter green on hover */
 }
 
+/* Responsive image styling */
 .photos-site .photos img {
-  margin-top: 15px;
-  padding: 15px;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Maintain aspect ratio without distortion */
-  border-radius: 8px; /* Match container's border radius */
+  max-width: 100%; /* Make image width 100% of the container */
+  height: auto; /* Automatically adjust height while maintaining aspect ratio */
+  object-fit: contain; /* Ensure the image scales without distorting */
+  border-radius: 8px; /* Rounded corners for the image */
 }
 
-/* Styling for the counter */
+/* Ensure the counter is placed correctly for all screen sizes */
 .photos-site .imageCounter {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   color: white;
   padding: 10px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 5px;
 }
-
 
 
 /* Basic styling for the history section */
@@ -454,4 +454,66 @@ body {
 
 .login-form button:hover {
   background-color: rgb(105, 229, 85);
+}
+
+
+
+/* Ensuring images adjust properly on mobile */
+@media (max-width: 600px) {
+  .photos-site .main-content {
+    flex-direction: column; /* Stack the elements vertically on small screens */
+    gap: 15px; /* Reduced gap between elements */
+  }
+
+  /* Optional: Adjust button sizes for mobile */
+  .photos-site button {
+    width: 100%; /* Make buttons span the width of the screen */
+    padding: 12px; /* Increase padding for better touch targets */
+  }
+
+  .photos-site .photos img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio for smaller screens */
+  }
+}
+
+/* General Image Responsiveness */
+.responsive-img, .responsive-photo {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensures the image does not overflow */
+}
+
+/* Optional: for logos, you may want to control their maximum size */
+.responsive-img {
+  max-width: 50px;  /* Set a max size for the logo */
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive photo for other images */
+.responsive-photo {
+  max-width: 100%;  /* Ensure image resizes to fit container */
+  height: auto;
+}
+
+/* Additional Media Queries to handle responsiveness on different screen sizes */
+@media (max-width: 768px) {
+  /* Example for logo resizing on smaller screens */
+  .responsive-img {
+    max-width: 40px;  /* Resize logo on smaller screens */
+  }
+
+  /* Example for images in the next match section */
+  .next-match img {
+    width: 100%;  /* Let images scale */
+    max-width: 50px;  /* Maximum width for logos */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smaller screen adjustments */
+  .responsive-img {
+    max-width: 30px;  /* Further reduce logo size for very small screens */
+  }
 }
