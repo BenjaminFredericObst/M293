@@ -1,0 +1,267 @@
+/* Grundlayout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding: 10px;
+}
+
+/* Header */
+header {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background-color: #0099e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+header button a {
+  color: white;
+  text-decoration: none;
+}
+
+header button:hover {
+  background-color: #007bb5;
+}
+
+/* Logo */
+.logo img {
+  max-width: 140px;
+  height: auto;
+}
+
+/* Suchbox */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #0099e6;
+  border-radius: 5px;
+}
+
+#searchButton {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #0099e6;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#searchButton:hover {
+  background-color: #007bb5;
+}
+
+/* Main Section */
+main {
+  padding: 10px;
+}
+
+/* Titelbild */
+.titelbild {
+  background-color: #0099e6;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.titelbild img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Sub-Articles */
+.sub-articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sub-articles article {
+  background-color: #0099e6;
+  color: white;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  padding: 20px 10px;
+}
+
+.sub-articles article h2 {
+  font-size: 1.2rem;
+}
+
+.sub-articles a {
+  color: white;
+  text-decoration: none;
+  background-color: #0099e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.sub-articles a:hover {
+  background-color: #007bb5;
+}
+
+/* Logo für Unterseiten (Events, Battlepass, Map) */
+.subpage-logo img {
+  max-width: 140px; /* Setzt das Logo auf eine maximale Breite von 100px */
+  height: auto;
+}
+
+/* Highlight Search Results */
+.highlight {
+  background-color: yellow;
+}
+
+/* Artikel zu Events */
+.events {
+  padding: 20px;
+  background-color: #0099e6;
+  color: white;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.events h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.events p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Artikel zur Map */
+.map {
+  padding: 20px;
+  background-color: #0099e6;
+  color: white;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.map h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.map p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.map img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.map .points-of-interest {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.map .points-of-interest div {
+  background-color: #0099e6;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 150px;
+}
+
+.map .points-of-interest div:hover {
+  background-color: #007bb5;
+}
+
+/* Artikel zum Battlepass */
+.battlepass {
+  padding: 20px;
+  background-color: #0099e6;
+  color: white;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.battlepass h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.battlepass p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.battlepass img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.battlepass .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.battlepass .features div {
+  background-color: #0099e6;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 150px;
+}
+
+.battlepass .features div:hover {
+  background-color: #007bb5;
+}
