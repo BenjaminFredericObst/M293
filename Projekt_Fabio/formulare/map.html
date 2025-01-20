@@ -40,5 +40,38 @@
             </article>
         </section>
     </main>
+        
+    <script>
+        // Funktion zum Hervorheben von Übereinstimmungen
+        function highlightMatches(searchText) {
+            if (!searchText) return;  // Verhindern, dass bei leerem Text gesucht wird
+
+            const regex = new RegExp(`(${searchText})`, 'gi');  // Regex für die Suche (Groß- und Kleinschreibung)
+            const content = document.body;
+
+            // Funktion zum Ersetzen von Text in Textknoten
+            function walk(node) {
+                if (node.nodeType === 3) { // Wenn es sich um einen Textknoten handelt
+                    const match = node.nodeValue.match(regex);
+                    if (match) {
+                        const span = document.createElement('span');
+                        span.innerHTML = node.nodeValue.replace(regex, `<span class="highlight">$1</span>`);
+                        node.parentNode.replaceChild(span, node);
+                    }
+                } else if (node.nodeType === 1 && node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') {
+                    // Rekursiv in allen Elementen, außer <script> und <style>
+                    Array.from(node.childNodes).forEach(walk);
+                }
+            }
+
+            walk(content); // Die Funktion auf den gesamten Body anwenden
+        }
+
+        // Suche nach dem Text aus dem Input-Feld
+        function search() {
+            const searchText = document.getElementById('searchInput').value;
+            highlightMatches(searchText);
+        }
+    </script>
 </body>
 </html>
