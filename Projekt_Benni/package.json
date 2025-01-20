@@ -5,9 +5,9 @@
     "lodash": "^4.17.21"
   },
   "scripts": {
-    "minify:html": "npx html-minifier-terser --input-dir ./Templates --output-dir ./minimized --collapse-whitespace --file-ext html",
-    "minify:css": "npx css-minify -d ./Templates -o ./minimized",
-    "copy:assets": "npx cpy ./Templates/**/*.{jpg,png,gif,svg,ico} ./minimized --parents",
+    "minify:html": "npx html-minifier-terser --input-dir ./Templates --output-dir ./minimized_templates --collapse-whitespace --file-ext html",
+    "minify:css": "npx css-minify -d ./Templates -o ./minimized_templates",
+    "copy:assets": "npx cpy ./Templates/**/*.{jpg,png,gif,svg,ico} ./minimized_templates --parents",
     "minify:all": "npm run minify:html && npm run minify:css && npm run copy:assets"
   },
   "devDependencies": {
