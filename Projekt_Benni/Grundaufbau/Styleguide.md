@@ -9,7 +9,8 @@ alles nicht Titel: VW Head Bold, sans-serif
 Titel: akzidenz-grotesk-condensed, sans-serif
 ## Logo
 ![Logo](./images/logo.png)
-## Weiter Wireframes
-![matchcenter](./images/matchcenter.png)
-![Geschichte](./images/geschichte.png)
-![Fotos](./images/fotos.png)
+## Wireframes
+![Index](./images/Syleguide/index.png)
+![Matchcenter](./images/Syleguide/matchcenter.png)
+![Fotos](./images/Syleguide/photos.png)
+![Geschichte](./images/Syleguide/history.png)
