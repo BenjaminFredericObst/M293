@@ -1,0 +1,14 @@
+{
+  
+  "dependencies": {
+    "css-minify": "^2.1.0",
+    "html-minifier-terser": "^7.2.0"
+  
+  },
+  "scripts": {
+      "minify:html": "npx html-minifier-terser --input-dir ./formulare --output-dir ./optimierung --collapse-whitespace --file-ext html",
+      "minify:css": "npx css-minify -d ./formulare -o ./optimierung",
+      "copy:assets": "npx cpy ./formulare/*/.{jpg,png,gif,svg,ico} ./optimierung --parents",
+      "minify:all": "npm run minify:html && npm run minify:css && npm run copy:assets"
+    }
+}
