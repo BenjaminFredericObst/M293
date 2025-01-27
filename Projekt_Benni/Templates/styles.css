@@ -97,6 +97,38 @@ body {
   margin: 0; /* Ensure no default margin on the h2 */
 }
 
+.index .photos .responsive-container {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Responsives Bild */
+.index .photos .responsive-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optionale Abrundung */
+  display: block;
+  margin: 0 auto;
+}
+
+.index .photos figcaption a {
+  color: rgb(65, 166, 57); /* Blau, typisch für Links */
+  text-decoration: none; /* Entfernt Unterstrich */
+}
+
+.index .photos figcaption a:hover {
+  color:rgb(105, 229, 85);
+  text-decoration: underline; /* Unterstrich bei Hover für Interaktivität */
+}
+
+.index .photos figcaption {
+  font-size: 12px;
+  text-align: left; /* Text linksbündig ausrichten */
+  line-height: 1.5; /* Bessere Lesbarkeit durch Zeilenhöhe */
+}
+
 .index .last-game {
   display: flex;
   justify-content: space-between;
@@ -316,6 +348,21 @@ body {
   border-radius: 5px;
 }
 
+.photos-site .main-content .photos figcaption a {
+  color: rgb(65, 166, 57);
+  text-decoration: none; /* Entfernt Unterstrich */
+}
+
+.photos-site .main-content .photos figcaption a:hover {
+  text-decoration: underline; /* Unterstrich bei Hover für Interaktivität */
+  color:rgb(105, 229, 85);
+}
+
+.photos-site .main-content .photos figcaption {
+  font-size: 12px;
+  text-align: left; /* Text linksbündig ausrichten */
+  line-height: 1.5; /* Bessere Lesbarkeit durch Zeilenhöhe */
+}
 
 /* Basic styling for the history section */
 .history {
