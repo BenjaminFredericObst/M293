@@ -7,7 +7,6 @@ Willkommen zum Modul293 Projekt von Team 1! Hier findet ihr alle wichtigen Infor
 ### 🌐 Webauftritt
 
 - [**Webseiten**](https://benjaminfredericobst.github.io/M293/)
-- [**Ka**](http://fabiomueller.bplaced.net/)
 
 ## 🎯 Kompetenz
 
